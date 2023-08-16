@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_provider/provider/count_provider.dart';
-import 'package:flutter_provider/provider/counter_screen_pro.dart';
+import 'package:flutter_provider/provider/favourite_provider.dart';
 import 'package:flutter_provider/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           create: (context) => CountProivder(),
         ),
         ChangeNotifierProvider(
-          create: (context) => FavoriteScreenProvider(),
+          create: (context) => FavouriateScreenProvider(),
         ),
       ],
       child: MaterialApp(
