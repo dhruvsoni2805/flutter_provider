@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../provider/favourite_provider.dart';
+import '../../provider/favourite_provider.dart';
 import 'favouirate_item_screen.dart';
 
 class FavouriteScreen extends StatefulWidget {

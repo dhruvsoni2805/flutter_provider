@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_provider/screens/favourite_screen.dart';
+import 'package:flutter_provider/screens/favouirate%20screen/favourite_screen.dart';
 import 'package:flutter_provider/screens/theme_change_screen.dart';
 // import 'package:flutter_provider/screens/favourite_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/count_provider.dart';
+import 'login/login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -259,7 +260,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const FavouriteScreen(),
+                        builder: (context) => const LoginScreen(),
                       ));
                 },
                 style: ElevatedButton.styleFrom(

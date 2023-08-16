@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_provider/provider/change_theme_provider.dart';
 import 'package:flutter_provider/provider/count_provider.dart';
 import 'package:flutter_provider/provider/favourite_provider.dart';
+import 'package:flutter_provider/provider/login_provider.dart';
 import 'package:flutter_provider/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => ThemeChangeProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => LoginProvider(),
         )
       ],
       child: Builder(
@@ -39,18 +43,6 @@ class MyApp extends StatelessWidget {
             home: const HomeScreen(),
           );
         },
-      ),
-    );
-
-    ChangeNotifierProvider(
-      create: (context) => CountProivder(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(useMaterial3: true),
-        darkTheme: ThemeData.dark(useMaterial3: true),
-        themeMode: ThemeMode.system,
-        home: const HomeScreen(),
       ),
     );
   }

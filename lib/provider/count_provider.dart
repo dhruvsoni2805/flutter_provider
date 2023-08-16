@@ -33,6 +33,7 @@ class CountProivder with ChangeNotifier {
 
   void timerCountReset() {
     _timerCount = 0;
+    notifyListeners();
   }
 
   double _slidervalue = 0.5;
